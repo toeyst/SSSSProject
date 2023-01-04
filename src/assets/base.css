@@ -56,7 +56,6 @@
   box-sizing: border-box;
   margin: 0;
   position: relative;
-  font-weight: normal;
 }
 
 body {
@@ -71,4 +70,15 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.section_area{
+  font-family: Inria Serif;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: center;
+  text-decoration-line: underline;  
 }
