@@ -2,12 +2,14 @@
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 import Navbar from './components/Navbar.vue'
+import ShoesShop from './components/ShoesShop.vue';
 
 </script>
 
 <template>
   
     <Navbar></Navbar>
+    <ShoesShop></ShoesShop>
 
     <!-- <div class="wrapper">
       <HelloWorld msg="You did it!" />
