@@ -2,6 +2,7 @@
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 import Navbar from './components/Navbar.vue'
+import PromoShoes from './components/PromoShoes.vue';
 import ShoesShop from './components/ShoesShop.vue';
 
 </script>
@@ -9,6 +10,7 @@ import ShoesShop from './components/ShoesShop.vue';
 <template>
   
     <Navbar></Navbar>
+    <PromoShoes></PromoShoes>
     <ShoesShop></ShoesShop>
 
     <!-- <div class="wrapper">

@@ -49,6 +49,9 @@ defineProps({
 
 <style scoped>
 
+.section_area{
+  border-top-style: solid;
+}
 .container{
   width: 1150px;
   margin: 0 auto;
@@ -57,16 +60,15 @@ defineProps({
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap : 100px;
-}
-.section_grid_item{
   text-align: center;
+  font-family:'Courier New', Courier, monospace;
 }
 .section_item_img img{
   width: 100%;
 }
 .section_item_text{
   color: black;
-  font-weight: 500;
+  background-color: white;
 }
 
 </style>
