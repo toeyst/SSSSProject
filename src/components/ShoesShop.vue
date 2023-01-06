@@ -15,31 +15,34 @@ defineProps({
       <div class="section_grid_item1">
 
         <div class="section_item_img">
-          <img src="src\assets\shoe02.webp" alt="" width="288" height="300">
+          <img src="src\assets\shoe02.png" alt="" width="288" height="300">
         </div>
         <div class="section_item_text">
-          <h3>Nike Air Force 1'07 LV8 Men</h3>
-          <h3>4700$</h3>
+          <h4>Nike Air Force 1'07 LV8</h4>
+          <h5>Men Shoe</h5>
+          <h6>$4700</h6>
         </div>
       </div>      
       
       <div class="section_grid_item2">
         <div class="section_item_img">
-          <img src="src\assets\shoe03.webp" alt="" width="288" height="300">
+          <img src="src\assets\shoe03.png" alt="" width="288" height="300">
         </div>
         <div class="section_item_text">
-          <h3>Nike Air Max 97 SE Men Shoe</h3>
-          <h3>6900$</h3>
+          <h4>Nike Air Max 97 SE</h4>
+          <h5>Men Shoe</h5>
+          <h6>$6900</h6>
         </div>
       </div>      
       
       <div class="section_grid_item3">
         <div class="section_item_img">
-          <img src="src\assets\shoe04.webp" alt="" width="288" height="300">
+          <img src="src\assets\shoe04.png" alt="" width="288" height="300">
         </div>
         <div class="section_item_text">
-          <h3>Nike Blazer Mid Premium Women Shoe</h3>
-          <h3>4700$</h3>
+          <h4>Nike Blazer Mid Premium</h4>
+          <h5>Women Shoe</h5>
+          <h6>$4700</h6>
         </div>
       </div>
     </div>
@@ -49,9 +52,7 @@ defineProps({
 
 <style scoped>
 
-.section_area{
-  border-top-style: solid;
-}
+
 .container{
   width: 1150px;
   margin: 0 auto;
@@ -61,7 +62,9 @@ defineProps({
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap : 100px;
   text-align: center;
-  font-family:'Courier New', Courier, monospace;
+  color: #fff !important;
+  font-family: 'Inria Serif' !important;
+  font-weight: 500 !important;;
 }
 .section_item_img img{
   width: 100%;
@@ -69,6 +72,7 @@ defineProps({
 .section_item_text{
   color: black;
   background-color: white;
+  text-align: left;
 }
 
 </style>
