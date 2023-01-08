@@ -37,20 +37,19 @@ defineProps({
   margin: 0 auto;
 }
 .promo-img img{
-  width: 100%;
+  width: 400px;
   height: 375px;
 }
 .promo-area-grid{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 400px 1fr;
   color: black !important;
   font-family: 'Inria Serif' !important;
   font-weight: 500 !important;
 }
 .promo-text-left{
-  text-align: left;
+  text-align: right;
   margin-top: 165px;
-  text-decoration: solid;
 }
 .promo-text-right{
   text-align: left;
@@ -70,7 +69,7 @@ defineProps({
   font-size: 30px;
   font-style: italic;
   font-weight: 700;
-  line-height: 60px;
+  line-height: 35px;
   letter-spacing: 0em;
   text-align: center;
 
