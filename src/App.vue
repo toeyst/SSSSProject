@@ -2,15 +2,16 @@
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 import Navbar from './components/Navbar.vue'
-import ShoesShop from './components/ShoesShop.vue';
-
+import HomeView from './views/HomeView.vue'
+import LoginView from './views/LoginView.vue'
 </script>
 
 <template>
   
     <Navbar></Navbar>
-    <ShoesShop></ShoesShop>
-
+    <router-view />
+    <!-- <HomeView></HomeView> -->
+<!-- <LoginView></LoginView> -->
     <!-- <div class="wrapper">
       <HelloWorld msg="You did it!" />
 

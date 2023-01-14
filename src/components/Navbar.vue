@@ -1,5 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+
 defineProps({
   msg: {
     type: String,
@@ -15,7 +16,7 @@ defineProps({
     </div>
   
     <div class="col-1  setmargin-img " style="text-align:center;">
-      <RouterLink class="settext" to="/">Home </RouterLink>
+      <RouterLink class="settext" to="/"> Home </RouterLink>
  
     </div>
     <div class="col-1 setmargin-img " style="text-align:center;">
@@ -23,7 +24,7 @@ defineProps({
  
     </div> 
     <div class="col-1 setmargin-img " style="text-align:center;">
-      <RouterLink  class="settext" to="/"> Login</RouterLink>
+      <RouterLink   class="settext" to="/login"> Login</RouterLink>
  
     </div>
 
@@ -32,7 +33,15 @@ defineProps({
 
 
 </template>
-
+<script >
+export default {
+  components: {
+    RouterLink,
+    RouterView
+  },
+  //other code here
+}
+</script>
 <style scoped>
 .navbar {
  
