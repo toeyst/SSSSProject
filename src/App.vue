@@ -9,8 +9,7 @@ import LoginView from './views/LoginView.vue'
 <template>
   
     <Navbar></Navbar>
-    <ShoesShop></ShoesShop>
-
+    <RouterView />
     <!-- <div class="wrapper">
       <HelloWorld msg="You did it!" />
 
@@ -21,7 +20,7 @@ import LoginView from './views/LoginView.vue'
         <RouterLink to="/about">About</RouterLink>
       </nav> -->
 
-  <!-- <RouterView /> -->
+  
 </template>
 
 <style scoped>
