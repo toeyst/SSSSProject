@@ -9,9 +9,8 @@ import LoginView from './views/LoginView.vue'
 <template>
   
     <Navbar></Navbar>
-    <router-view />
-    <!-- <HomeView></HomeView> -->
-<!-- <LoginView></LoginView> -->
+    <ShoesShop></ShoesShop>
+
     <!-- <div class="wrapper">
       <HelloWorld msg="You did it!" />
 
