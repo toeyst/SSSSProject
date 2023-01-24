@@ -12,9 +12,12 @@ defineProps({
 <div class="promo_section_area">
   <div class="promo-container">
     <div class="promo-area-grid">
+      <div class="hellotextleft1">
+        <h1>THE</h1>
+      </div>
         <div class="promo-text-left">
-          <h1>THE</h1>
-          <h1>BEST SELLER</h1>
+          <h2>BEST</h2>
+          <h2>SELLER</h2>
         </div>
         <div class="promo-img">
           <img src="src\assets\shoe01.png" class="rounded" alt="...">
@@ -33,6 +36,12 @@ defineProps({
 
 <style scoped>
 
+h1 {
+font-size: 150px;
+}
+h2{
+  font-size: 80px;
+}
 .promo-container{
   margin: 0 auto;
 }
@@ -42,18 +51,28 @@ defineProps({
 }
 .promo-area-grid{
   display: grid;
-  grid-template-columns: 1fr 400px 1fr;
+  grid-template-columns: 1fr auto auto 1fr;
   color: black !important;
   font-family: 'Inria Serif' !important;
   font-weight: 500 !important;
 }
 .promo-text-left{
-  text-align: right;
+  text-align: left;
   margin-top: 165px;
+  text-decoration-line: underline;
+  text-decoration-thickness: 3px;
+}
+.hellotextleft1{
+  padding-right: 10px;
+  padding-top: 100px;
+  text-align: right;
+  text-decoration-line: underline;
+  text-decoration-thickness: 3px;
 }
 .promo-text-right{
   text-align: left;
-  margin-top: 165px;
+  margin-top: 210px;
+  margin-left: 10px;
 }
 .button-pos{
   margin-top: auto;
