@@ -46,8 +46,7 @@ h2{
   margin: 0 auto;
 }
 .promo-img img{
-  width: 400px;
-  height: 375px;
+  object-fit: contain;
 }
 .promo-area-grid{
   display: grid;
@@ -71,7 +70,7 @@ h2{
 }
 .promo-text-right{
   text-align: left;
-  margin-top: 210px;
+  margin-top: 275px;
   margin-left: 10px;
 }
 .button-pos{

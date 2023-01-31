@@ -97,7 +97,7 @@ defineProps({
   margin-top: 100px;
 }
 .section_item_img img{
-  width: 100%;
+  object-fit: contain;
 }
 .section_item_text{
   color: black;

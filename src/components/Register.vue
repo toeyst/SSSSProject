@@ -2,21 +2,17 @@
   <div>
     <form @submit.prevent="submitForm">
       <div class="form-container">
-        <div class="form-area">
-        <div class="form-group">
-          <h1>Register</h1>
-          <label for="email">Email</label>
-          <input v-model="form.email" type="email" placeholder="Enter e-mail" class="form-control" id="email" required>
-          <label for="password">Passsword</label>
-          <input v-model="form.password" type="password" placeholder="Enter password" class="form-control" id="password" required>
-          <div class="button-regis">
-            <button type="submit" class="btn btn-primary">Register</button>
+          <div class="form-group">
+            <h1>Register</h1>
+            <label for="email">Email</label>
+            <input v-model="form.email" type="email" placeholder="Enter e-mail" class="form-control" id="email" required>
+            <label for="password">Passsword</label>
+            <input v-model="form.password" type="password" placeholder="Enter password" class="form-control" id="password" required>
+            <div class="button-regis">
+              <button type="submit" class="btn btn-primary">Register</button>
+            </div>
           </div>
-       </div>
-      <div>
       </div>
-      </div>
-    </div>
     </form>
   </div>
 </template>
