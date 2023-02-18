@@ -28,7 +28,7 @@ defineProps({
  
     </div>
     <div class="col-1 setmargin-img " style="text-align:center;">
-      <RouterLink   class="settext" to="/details"> Details </RouterLink>
+      <RouterLink   class="settext" to="/detail"> Details </RouterLink>
  
     </div>
 
