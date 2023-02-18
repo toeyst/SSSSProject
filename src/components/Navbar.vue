@@ -11,7 +11,7 @@ defineProps({
 
 <template>
   <div class="row navbar m-0 p-0">
-    <div class="col-9  p-0 my-2 setmargin-img">
+    <div class="col-8  p-0 my-2 setmargin-img">
       <img src="../assets/Logo-removebg-preview.png" alt="" width="75">
     </div>
   
@@ -25,6 +25,10 @@ defineProps({
     </div> 
     <div class="col-1 setmargin-img " style="text-align:center;">
       <RouterLink   class="settext" to="/login"> Login</RouterLink>
+ 
+    </div>
+    <div class="col-1 setmargin-img " style="text-align:center;">
+      <RouterLink   class="settext" to="/details"> Details </RouterLink>
  
     </div>
 
