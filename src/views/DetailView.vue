@@ -1,15 +1,9 @@
 <script setup>
-
+import DetailPage from '../components/DetailPage.vue';
 
 </script>
 
 <template>
-  <main>
+    <DetailPage></DetailPage>
 
-    
-    
-
-  </main>
 </template>
-<style scoped>
-</style>
