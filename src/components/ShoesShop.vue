@@ -15,7 +15,7 @@ defineProps({
       <div class="section_grid_item1">
 
         <div class="section_item_img">
-          <img src="src\assets\shoe02.png" alt="" width="288" height="300"/>
+          <img src="src\assets\ShoeShop01.png" alt="" width="288" height="300"/>
         </div>
         <div class="section_item_text">
           <h4>Nike Air Force 1'07 LV8</h4>
@@ -30,7 +30,7 @@ defineProps({
       
       <div class="section_grid_item2">
         <div class="section_item_img">
-          <img src="src\assets\shoe03.png" alt="" width="288" height="300"/>
+          <img src="src\assets\ShoeShop02.png" alt="" width="288" height="300"/>
         </div>
         <div class="section_item_text">
           <h4>Nike Air Max 97 SE</h4>
@@ -45,7 +45,7 @@ defineProps({
       
       <div class="section_grid_item3">
         <div class="section_item_img">
-          <img src="src\assets\shoe04.png" alt="" width="288" height="300"/>
+          <img src="src\assets\ShoeShop03.png" alt="" width="288" height="300"/>
         </div>
         <div class="section_item_text">
           <h4>Nike Blazer Mid Premium</h4>
@@ -60,7 +60,7 @@ defineProps({
 
       <div class="section_grid_item4">
         <div class="section_item_img">
-          <img src="src\assets\shoe05.png" alt="" width="288" height="200"/>
+          <img src="src\assets\ShoeShop04.png" alt="" width="288" height="200"/>
         </div>
         <div class="section_item_text">
           <h4>Nike Blazer Mid Premium</h4>

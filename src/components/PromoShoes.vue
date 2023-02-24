@@ -20,7 +20,7 @@ defineProps({
           <h2>SELLER</h2>
         </div>
         <div class="promo-img">
-          <img src="src\assets\shoe01.png" class="rounded" alt="...">
+          <img src="src\assets\PromoShoesPic.png" class="rounded" alt="...">
         <div class="button-pos"> <button class="promo-button">BUY NOW</button></div>
         </div>
         <div class="promo-text-right">
