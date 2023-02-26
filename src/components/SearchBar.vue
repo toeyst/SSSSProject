@@ -1,6 +1,5 @@
 
 <script setup>
-import axios from 'axios';
 </script>
 <template>
   <form @submit.prevent="handleSearch">
@@ -21,6 +20,7 @@ export default {
   data() {
     return {
       input: '',
+
       SpeechRecognition: window.SpeechRecognition || window.webkitSpeechRecognition,
       recognition: null,
     };
@@ -53,16 +53,7 @@ export default {
       const input = this.input.trim().toLowerCase();
       console.log('input:', input);
       this.$emit("search", this.input)
-      if (input) {
-        console.log('sending axios request...');
-        axios.post(`https://localhost:44387/SSSS/GetDetail?input=${input}`, null, { withCredentials: true })
-          .then(response => {
-            console.log(response.data);
-          })
-          .catch(error => {
-            console.error(error);
-          });
-      }
+      
     }
   }
 };
