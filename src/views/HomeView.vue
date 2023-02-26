@@ -7,10 +7,21 @@ import ShoesShop from './../components/ShoesShop.vue';
 
 <template>
   <main>
-    <SearchBar></SearchBar>
+    <SearchBar @search="onSearch"></SearchBar>
     <PromoShoes></PromoShoes>
     <ShoesShop></ShoesShop> 
-    
+     
 
   </main>
 </template>
+<script>
+export default {
+methods:{ 
+  onSearch(value) {
+    console.log("test")
+    console.log("viewtest",value);
+  }
+
+}
+}
+</script>

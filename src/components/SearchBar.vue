@@ -1,69 +1,70 @@
 
-
+<script setup>
+import axios from 'axios';
+</script>
 <template>
   <form @submit.prevent="handleSearch">
-    <input type="text" v-model="query" placeholder="Search Nike.com" />
+    <input type="text" v-model="input" placeholder="Search Nike.com" />
     <button type="submit">Search</button>
   </form>
-  
 
-  
+
+
   <div>
- 
+
     <button @click="startRecognition">Start Recognition</button>
   </div>
-
-
 </template>
 
 <script>
 export default {
-data() {
+  data() {
     return {
-      query: '',
+      input: '',
       SpeechRecognition: window.SpeechRecognition || window.webkitSpeechRecognition,
       recognition: null,
     };
   },
   mounted() {
     if (window.SpeechRecognition || window.webkitSpeechRecognition) {
-        this.recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
-        this.recognition.lang = 'th-TH';
+      this.recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+      this.recognition.lang = 'en-US';
     } else {
-        console.error("The current browser doesn't support the speech recognition API")
+      console.error("The current browser doesn't support the speech recognition API")
     }
   },
 
-methods: {
-  startRecognition() {
-    if (this.recognition) {
-      this.recognition.start();
-      this.recognition.addEventListener('result', event => {
-        this.query = event.results[0][0].transcript;
-      });
-    }
-  },
-  stopRecognition() {
-    if (this.recognition) {
-      this.recognition.stop();
-    }
-  },
-  handleSearch() {
-    const { query } = this;
-    if(query) {
-        // send the query to the server using axios
-        console.log(query)
-        // axios.post('/search', { query })
-        //   .then(response => {
-        //     console.log(response.data);
-        //     // do something with the response data
-        //   })
-        //   .catch(error => {
-        //     console.error(error);
-        //   });
+  methods: {
+    startRecognition() {
+      if (this.recognition) {
+        this.recognition.start();
+        this.recognition.addEventListener('result', event => {
+          this.input = event.results[0][0].transcript;
+        });
+      }
+    },
+    stopRecognition() {
+      if (this.recognition) {
+        this.recognition.stop();
+      }
+    },
+    handleSearch() {
+      console.log('handleSearch called');
+      const input = this.input.trim().toLowerCase();
+      console.log('input:', input);
+      this.$emit("search", this.input)
+      if (input) {
+        console.log('sending axios request...');
+        axios.post(`https://localhost:44387/SSSS/GetDetail?input=${input}`, null, { withCredentials: true })
+          .then(response => {
+            console.log(response.data);
+          })
+          .catch(error => {
+            console.error(error);
+          });
+      }
     }
   }
-}
 };
 </script>
 
@@ -106,7 +107,7 @@ input[type="text"]:focus {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
 }
 
-input[type="text"]:focus ~ #search-overlay {
+input[type="text"]:focus~#search-overlay {
   opacity: 1;
   pointer-events: auto;
 }
@@ -118,8 +119,6 @@ input[type="text"]:focus ~ #search-overlay {
   right: 0;
   bottom: 0;
   background-color: rgba(255, 255, 255, 0.8);
-  z-index:-1;
+  z-index: -1;
 }
-
-
 </style>
