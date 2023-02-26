@@ -52,6 +52,7 @@ export default {
       console.log('handleSearch called');
       const input = this.input.trim().toLowerCase();
       console.log('input:', input);
+      this.$emit("search", this.input)
       if (input) {
         console.log('sending axios request...');
         axios.post(`https://localhost:44387/SSSS/GetDetail?input=${input}`, null, { withCredentials: true })
