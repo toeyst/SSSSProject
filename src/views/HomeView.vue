@@ -10,13 +10,13 @@ import axios from 'axios';
 <template>
   <main>
     <SearchBar @search="onSearch"></SearchBar>
-    <PromoShoes></PromoShoes>
+    <PromoShoes v-if="show"></PromoShoes>
     <ShoesShop v-if="show"></ShoesShop> 
     <div class="container">
   <div class="row">
     
     <div class="col-md-3" v-for="item in items" :key="item.id">
-      <card :title="item.productName" :sex="item.productSex" :image="item.productPicture"  :type="item.productType" />
+      <card :title="item.productName" :sex="item.productSex" :image="item.productPicture"  :type="item.productType" :color="item.productColor" />
     </div>
   </div>
 </div>

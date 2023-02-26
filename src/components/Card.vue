@@ -1,9 +1,10 @@
 <template>
   <div class="card">
     <img :src="image" alt="" width="288" height="300"/>
-    <h2>{{ title }}</h2>
-    <p>{{ sex }}</p>
-    <p>{{ type }}</p> 
+    <h1>{{ title }}</h1>
+    <h3>{{ sex }} {{ type }}</h3>
+    <h3>color : {{ color }}</h3>
+
   </div>
 </template>
 
@@ -23,6 +24,10 @@ export default {
       required: true
     },
     image: {
+      type: String,
+      required: true
+    },
+    color: {
       type: String,
       required: true
     }
