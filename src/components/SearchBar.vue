@@ -11,7 +11,9 @@
 
   <div>
 
-    <button @click="startRecognition">Start Recognition</button>
+    <button @click="startRecognition" class="btn btn-outline-danger">Start Recognition 
+      <img id="imgid" src="../assets/voice-search.png"  alt="" width="30" height="30">
+    </button>
   </div>
 </template>
 
@@ -40,6 +42,7 @@ export default {
         this.recognition.start();
         this.recognition.addEventListener('result', event => {
           this.input = event.results[0][0].transcript;
+          
         });
       }
     },

@@ -9,15 +9,7 @@ import Navbar from './components/Navbar.vue'
   
     <Navbar></Navbar>
     <RouterView />
-    <!-- <div class="wrapper">
-      <HelloWorld msg="You did it!" />
 
-  
-    </div> -->
-      <!-- <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav> -->
 
   
 </template>

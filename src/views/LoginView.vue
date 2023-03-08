@@ -1,5 +1,8 @@
 <script setup >
 import Register from '../components/Register.vue';
+import { useRouter } from 'vue-router'
+
+const { push } = useRouter();
 </script>
 <template>
   <div v-if = !showRegis>
@@ -30,6 +33,7 @@ import Register from '../components/Register.vue';
 
 <script>
 export default {
+
   data() {
     return {
       email: "",
@@ -41,6 +45,12 @@ export default {
   methods: {
     login() {
       // Send a request to the server with the email and password
+      if(this.password == "123456"){
+        this.$router.push({ path: '/Admin' })
+      } else{
+        this.$router.push({ path: '/' })
+
+      }
       // Handle the response (e.g. show an error message if login fails)
     },
   }

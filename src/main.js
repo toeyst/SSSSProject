@@ -10,6 +10,8 @@ import VueWebSpeech from 'vue-web-speech'
 
 
 
+
+
 const app = createApp(App)
 app.config.globalProperties.axios = axios;
 app.use(router)
