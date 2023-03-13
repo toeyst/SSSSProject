@@ -67,7 +67,7 @@ defineProps({
 				<div class="price-details">
 					<h5>฿4700</h5>
 					<div class="price-btn">
-						<button v-bind:class="buttonStyle" @click="onClick">Add to cart</button>
+						<RouterLink to="/cart"><button v-bind:class="buttonStyle" @click="onClick">Add to cart</button> </RouterLink>
 						<button v-bind:class="buttonStyle" @click="onClick">Buy now</button>
 					</div>
 				</div>
@@ -235,7 +235,6 @@ nav ul li.search button[type="submit"] i {
   border-radius: 60px;
   font-family: Inria Serif;
   font-size: 30px;
-  font-style: italic;
   font-weight: 700;
   line-height: 35px;
   letter-spacing: 0em;
