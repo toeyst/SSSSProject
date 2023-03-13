@@ -25,7 +25,8 @@ defineProps({
       		</form>
 			</div>
     		</li>
-			<img src="../assets/cart.png" alt="" height="40" width="40">
+			<router-link to="/cart"><img src="../assets/cart.png" alt="" height="40" width="40" ></router-link>
+			
 
   		</ul>
 	</nav>
@@ -76,6 +77,10 @@ defineProps({
 
 <script>
 export default {
+	components: {
+    RouterLink,
+    RouterView
+  },
   data() {
     return {
       searchQuery: '',
