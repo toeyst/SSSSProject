@@ -26,7 +26,7 @@ defineProps({
         <div class="promo-text-right">
           <h3>Nike Air Force 1 '07 Premium</h3>
           <h4>Men Shoe</h4>
-          <h5>$4700</h5>
+          <h5>฿4700</h5>
         </div>
     </div>
   </div>

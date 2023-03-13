@@ -9,53 +9,249 @@ defineProps({
 </script>
 
 <template>
-	<div class="product-details">
-		<div class="product-info">
-			<p>
-			รายละเอียดแบบวินเทจยกระดับรุ่นไอคอนเพื่อนำสไตล์เหนือกาลเวลาที่ใส่ง่ายมาให้คุณ คู่นี้มาพร้อมหนังแท้และหนังสังเคราะห์ที่ให้สัมผัสแบบคลาสสิก ส่วนโลโก้ Swoosh แบบเป็นเลเยอร์และโฟมเปลือยที่ลิ้นรองเท้าก็เสริมลุคแบบเรโทร แน่นอนว่าบางสิ่งบางอย่าง
-			ก็ไม่เคยเปลี่ยน: ส่วน Nike Air ยังคงช่วยลดแรงกระแทกในทุกย่างก้าวของคุณ
-			</p>
+	<nav>
+  		<ul>
+    		<li class="col-4 nav-header"><a href="#">SSSS</a></li>
+			<li class="col-1 settextnav"><a href="#">Men</a></li>
+			<li class="col-1 settextnav"><a href="#">Women</a></li>
+			<li class="col-1 settextnav"><a href="#">Promotion</a></li>
+    		<li class="col-3 search">
+			<div>
+      		<form>
+				<div class="search-bar">
+					<input type="text" placeholder="Search">
+					<div class="search-icon"></div>
+				</div>
+      		</form>
+			</div>
+    		</li>
+			<img src="../assets/cart.png" alt="" height="40" width="40">
+
+  		</ul>
+	</nav>
+
+	<div class="split">
+		<div class="col-lg-5 detail-text">
+			<p>รายละเอียดแบบวิทเทจยกระดับรุ่นไอคอนเพื่อนำสไตล์เหนือการเวลาที่ใส่ง่ายมาให้คุณ คู่นี้มาพร้อมกับหนังแท้และหนังสังเคราะห์ที่ให้สัมผัสแบบคลาสสิก</p>
+			<p>ส่วนโลโก้ แบบเป็นเลเยอร์และโฟมเปลือย ส่วนที่ลิ้นรองเท้าก็เสริมลุคเรโทร</p>
+			<p>แน่นอนว่าบางสิ่งบางอย่างก็ไม่เคยเปลี่ยน และ Nike Air ก็ยังคงช่วยลดแรงกระแทกในทุกย่างก้าวของคุณ</p>
 		</div>
-		<div class="product-image">
-		  <img src="../testproject/shoe02.png" alt="Product image">
+		
+		<div class="col-lg-3 shoe-image">
+			<img src="src\assets\ShoeShop01.png" alt="Shoe">
 		</div>
-		<div class="product-sizing">
-		  <h2>Nike Airforce1 '07 LV8</h2>
-		  <h3>Men Shoe</h3>
-		  <h4>฿4700</h4>
-		  <p>Please select a size:</p>
-		  <select>
-			<option value="size-7">7</option>
-			<option value="size-8">8</option>
-			<option value="size-9">9</option>
-		  </select>
-		  <button class="add-to-cart">Add to Cart</button>
+
+		<div class="col-lg-2 sizing">
+			<h3>Nike AirForce 1 '07 LV8</h3>
+			<h5>Men shoe</h5>
+			<h5>Select your size</h5>
+				<div class="button-box">
+					<div class="left-buttons">
+    					<button>43</button>
+    					<button>44</button>
+    					<button>45</button>
+    					<button>46</button>
+   	 					<button>47</button>
+  					</div>
+
+ 				 	<div class="right-buttons">
+    					<button>48</button>
+    					<button>49</button>
+    					<button>50</button>
+    					<button>51</button>
+    					<button>52</button>
+ 				 	</div>
+				</div>
+
+				<div class="price-details">
+					<h5>฿4700</h5>
+					<div class="price-btn">
+						<button v-bind:class="buttonStyle" @click="onClick">Add to cart</button>
+						<button v-bind:class="buttonStyle" @click="onClick">Buy now</button>
+					</div>
+				</div>
 		</div>
-	  </div>
+	</div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      searchQuery: '',
+    };
+  },
+  methods: {
+    submitSearch() {
+      console.log(`Searching for: ${this.searchQuery}`);
+      // Perform search functionality here
+    },
+  },
+};
+</script>
+
+
 
 
 <style scoped>
-.product-details {
-  display: grid;
-  flex-direction: row;
-  align-items: flex-start;
-  grid-template-columns: 1fr 1fr 1fr;
+.settextnav a:hover{
+	background-color: #9c9c9c;
+	border-radius: 10px;
+}
+.nav-header{
+	font-size: xx-large;
+	text-align: left;
+	margin-left: 50px;
+}
+nav{
+	font-family: 'Inria Serif' !important;
+	background-color: white;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+nav ul li {
+  margin: 0 10px;
+  text-align: center;
 }
 
-.product-info {
-  margin-right: 20px;
+nav ul li a {
+	font-size: larger;
+	text-align: center;
+	color: black;
+	text-decoration: none;
+	padding: 10px;
 }
 
-.product-image {
-  margin-right: 20px;
+nav ul li.search {
+  align-items: left;
 }
 
-.product-sizing {
-  margin-top: 20px;
+nav ul li.search input[type="text"] {
+  font-size: large;
+  text-align: center;
+  background-color: #D9D9D9;
+  border: none;
+  border-radius: 15px;
+  color: black;
+  padding: 5px;
 }
 
-.add-to-cart {
-  margin-top: 20px;
+nav ul li.search button[type="submit"] {
+  background-color: transparent;
+  border: solid 2px black;
+  border-radius: 10px;
+  cursor: pointer;
 }
+nav ul li.search button[type="submit"] i {
+  color: black;
+  font-size: 16px;
+}
+.split {
+	margin: 0 auto;
+	display: flex;
+	min-height: 100vh;
+	background: linear-gradient(to right,#D9D9D9 0%, #D9D9D9 65%, white 35%, white 100%);
+	font-family: 'Inria Serif' !important;
+}
+.detail-text{
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: xx-large;
+	margin-top: 250px;
+	color: black;
+	text-align: center;
+}
+.shoe-image{
+	margin-top: 100px;
+	margin-right: 120px;
+}
+.sizing{
+	margin-left: 20px;
+	margin-top: 150px;
+}
+.sizing h3{
+	font-size:xx-large;
+}
+.button-box {
+	display: flex;
+	align-items: center;
+}
+.left-buttons {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.right-buttons {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.button-box button {
+  padding: 7px;
+  margin-top: 10px;
+  margin-right: 10px;
+  width: 100px;
+  font-size: 20px;
+  background-color: #D9D9D9;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.button-box button:hover {
+  background-color: #9c9c9c;
+}
+.price-details{
+	margin-top: 20px;
+}
+.price-details h5{
+	margin-left: 20px;
+}
+.price-details button {
+	border: none;
+	border-radius: 10px;
+}
+.price-details button:hover{
+	background-color: #9c9c9c;
+}
+.price-btn button{
+	background-color: #333232;
+	color: white;
+	width: 100px;
+	margin-left: 5px;
+	margin-top: 10px;
+	width: 250px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 60px;
+  font-family: Inria Serif;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.search-bar {
+  position: relative;
+  display: inline-block;
+  width: 450px;
+}
+.search-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 130px;
+  width: 20px;
+  height: 100%;
+  background-image: url('../assets/search.png');
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 </style>
