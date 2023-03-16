@@ -11,8 +11,8 @@
               <div class="col-lg-8">
                 <div class="p-5">
                   <div class="d-flex justify-content-between align-items-center mb-5">
-                    <h1 class="fw-bold mb-0 text-black">ตะกร้า</h1>
-                    <h6 class="mb-0 text-muted">3 รายการ</h6>
+                    <h1 class="settext fw-bold mb-0 text-black">ตะกร้า</h1>
+                    <h6 class="settext mb-0 text-muted">3 รายการ</h6>
                   </div>
                   <hr class="my-4">
 
@@ -24,9 +24,9 @@
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-3">
                       <h6 class="text-black mb-0">Nike Air Force 1'07 LV8</h6>
-                      <h6 class="text-muted">รองเท้าผ้าใบ</h6>
-                      <h6 class="text-muted">เขียว/ขาว/เหลือง</h6>
-                      <h6 class="text-muted">ขนาด 48</h6>
+                      <h6 class="settext text-muted">รองเท้าผ้าใบ</h6>
+                      <h6 class="settext text-muted">เขียว/ขาว/เหลือง</h6>
+                      <h6 class="settext text-muted">ขนาด 48</h6>
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
                       <button class="btn btn-link px-2"
@@ -60,9 +60,9 @@
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-3">
                       <h6 class="text-black mb-0">Nike Air Jordan 1 Mid</h6>
-                      <h6 class="text-muted">รองเท้าผ้าใบ</h6>
-                      <h6 class="text-muted">เทา/น้ำเงิน/ขาว</h6>
-                      <h6 class="text-muted">ขนาด 45</h6>
+                      <h6 class="settext text-muted">รองเท้าผ้าใบ</h6>
+                      <h6 class="settext text-muted">เทา/น้ำเงิน/ขาว</h6>
+                      <h6 class="settext text-muted">ขนาด 45</h6>
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
                       <button class="btn btn-link px-2"
@@ -96,9 +96,9 @@
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-3">
                       <h6 class="text-black mb-0">Nike Pegasus 39</h6>
-                      <h6 class="text-muted">รองเท้าวิ่ง</h6>
-                      <h6 class="text-muted">แดง/ดำ/ขาว</h6>
-                      <h6 class="text-muted">ขนาด 44</h6>
+                      <h6 class="settext text-muted">รองเท้าวิ่ง</h6>
+                      <h6 class="settext text-muted">แดง/ดำ/ขาว</h6>
+                      <h6 class="settext text-muted">ขนาด 44</h6>
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
                       <button class="btn btn-link px-2"
@@ -135,24 +135,24 @@
               </div>
               <div class="col-lg-4 bg-grey">
                 <div class="p-5">
-                  <h3 class="fw-bold mb-5 mt-2 pt-1">สรุปรายการ</h3>
+                  <h3 class="settext fw-bold mb-5 mt-2 pt-1">สรุปรายการ</h3>
                   <hr class="my-4">
 
                   <div class="d-flex justify-content-between mb-4">
-                    <h5 class="text-uppercase">ยอดรวมย่อย</h5>
+                    <h5 class="settext text-uppercase">ยอดรวมย่อย</h5>
                     <h5>฿14,300.00</h5>
                   </div>
 
-                  <h5 class="text-uppercase mb-3">ค่าธรรมเนียมการจัดส่งและดำเนินการ</h5>
+                  <h5 class="settext text-uppercase mb-3">ค่าธรรมเนียมการจัดส่งและดำเนินการ</h5>
 
-                  <div class="mb-4 pb-2">
+                  <div class="settext mb-4 pb-2">
                     <h6>ฟรี</h6>
                   </div>
 
-                  <h5 class="text-uppercase mb-3">รหัสส่วนลด</h5>
+                  <h5 class="settext text-uppercase mb-3">รหัสส่วนลด</h5>
 
                   <div class="mb-5">
-                    <div class="form-outline">
+                    <div class="settext form-outline">
                       <input type="text" id="form3Examplea2" class="form-control form-control-lg" placeholder="กรอกรหัสส่วนลด" />
                     </div>
                   </div>
@@ -160,16 +160,13 @@
                   <hr class="my-4">
 
                   <div class="d-flex justify-content-between mb-5">
-                    <h5 class="text-uppercase">ยอดรวม</h5>
+                    <h5 class="settext text-uppercase">ยอดรวม</h5>
                     <h5>฿14,300.00</h5>
                   </div>
-                  <div class="setbtn">
-                  <RouterLink to="/purchase">
-                  <button type="button" class="setbtn btn btn-dark btn-block btn-lg"
-                    data-mdb-ripple-color="dark">ชำระเงิน</button>
-                  </RouterLink>
+                  <div class="settextbtn">
+                  <button type="button" class="setbtn btn btn-dark  btn-lg"
+                    data-mdb-ripple-color="dark" data-bs-toggle="modal" data-bs-target="#exampleModal">ชำระเงิน</button>
                   </div>
-
                 </div>
               </div>
             </div>
@@ -179,6 +176,26 @@
     </div>
   </div>
 </section>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title settext" id="exampleModalLabel">การชำระเงิน</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="body-text settext">
+          <h6>โปรดแนบสลีปการชำระเงิน</h6>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary settext" data-bs-dismiss="modal">ปิด</button>
+        <button type="button" class="btn btn-primary settext">ยืนยัน</button>
+      </div>
+    </div>
+  </div>
+</div>
 </template>
 <script>
 
@@ -219,7 +236,13 @@ border-bottom-left-radius: 16px;
 border-bottom-right-radius: 16px;
 }
 }
-.setbtn{
-  width: 335px;
+.settextbtn{
+  text-align: right;
+}
+.settext{
+  font-family: 'Prompt', sans-serif;
+}
+.body-text{
+  text-align: center;
 }
 </style>

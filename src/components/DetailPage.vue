@@ -45,31 +45,31 @@ defineProps({
 		<div class="col-lg-2 sizing">
 			<h3>Nike AirForce 1 '07 LV8</h3>
 			<h5>Men shoe</h5>
-			<h5>Select your size</h5>
+			<h5>Select your size:</h5>
 				<div class="button-box">
 					<div class="left-buttons">
     					<button>43</button>
-    					<button>44</button>
     					<button>45</button>
-    					<button>46</button>
-   	 					<button>47</button>
+    					<button>47</button>
+    					<button>49</button>
+   	 					<button>51</button>
   					</div>
 
  				 	<div class="right-buttons">
+    					<button>44</button>
+    					<button>46</button>
     					<button>48</button>
-    					<button>49</button>
     					<button>50</button>
-    					<button>51</button>
     					<button>52</button>
  				 	</div>
 				</div>
 
 				<div class="price-details">
-					<h5>฿4700</h5>
-					<div class="price-btn">
-						<RouterLink to="/cart"><button v-bind:class="buttonStyle" @click="onClick">Add to cart</button> </RouterLink>
-						<button v-bind:class="buttonStyle" @click="onClick">Buy now</button>
-					</div>
+					<h5>฿4700.00</h5>
+					<RouterLink to="/cart">
+					<div class="btn-wrapper">
+						<button class="button-28" role="button"><span class="text">Add to cart</span></button>
+					</div></RouterLink>
 				</div>
 		</div>
 	</div>
@@ -100,16 +100,17 @@ export default {
 
 <style scoped>
 .settextnav a:hover{
+	font-family: 'Prompt' !important;
 	background-color: #9c9c9c;
 	border-radius: 10px;
 }
 .nav-header{
+	font-family: 'Inria Serif' !important;
 	font-size: xx-large;
 	text-align: left;
 	margin-left: 50px;
 }
 nav{
-	font-family: 'Inria Serif' !important;
 	background-color: white;
 }
 nav ul {
@@ -161,9 +162,10 @@ nav ul li.search button[type="submit"] i {
 	display: flex;
 	min-height: 100vh;
 	background: linear-gradient(to right,#D9D9D9 0%, #D9D9D9 65%, white 35%, white 100%);
-	font-family: 'Inria Serif' !important;
+	font-family: 'Prompt', sans-serif;
 }
 .detail-text{
+	font-family: 'Prompt', sans-serif;
 	margin-left: 20px;
 	margin-right: 20px;
 	font-size: xx-large;
@@ -208,6 +210,48 @@ nav ul li.search button[type="submit"] i {
   border-radius: 20px;
   cursor: pointer;
 }
+.button-28 {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+}
+
+.button-28:disabled {
+  pointer-events: none;
+}
+
+.button-28:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-28:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
 .button-box button:hover {
   background-color: #9c9c9c;
 }
@@ -216,29 +260,6 @@ nav ul li.search button[type="submit"] i {
 }
 .price-details h5{
 	margin-left: 20px;
-}
-.price-details button {
-	border: none;
-	border-radius: 10px;
-}
-.price-details button:hover{
-	background-color: #9c9c9c;
-}
-.price-btn button{
-	background-color: #333232;
-	color: white;
-	width: 100px;
-	margin-left: 5px;
-	margin-top: 10px;
-	width: 250px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-  border-radius: 60px;
-  font-family: Inria Serif;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 35px;
-  letter-spacing: 0em;
-  text-align: center;
 }
 .search-bar {
   position: relative;
