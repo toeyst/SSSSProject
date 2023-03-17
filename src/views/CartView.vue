@@ -1,5 +1,3 @@
-<script setup>
-</script>
 <template>
 <section class="h-100 h-custom" style="background-color: white;">
   <div class="container py-5 h-100">
@@ -177,7 +175,7 @@
   </div>
 </section>
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal" tabindex="-1"        aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
@@ -187,18 +185,41 @@
       <div class="modal-body">
         <div class="body-text settext">
           <h6>โปรดแนบสลีปการชำระเงิน</h6>
+          <form>
+            <input type="file" @change="onFileChange">
+          </form>
         </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary settext" data-bs-dismiss="modal">ปิด</button>
-        <button type="button" class="btn btn-primary settext">ยืนยัน</button>
+        <button type="submit" class="btn btn-primary settext" @click.prevent="onSubmit">ยืนยัน</button>
       </div>
     </div>
   </div>
 </div>
 </template>
-<script>
 
+<script>
+export default {
+  data() {
+    return {
+      file: null
+    }
+  },
+  methods: {
+    onFileChange(event) {
+      this.file = event.target.files[0];
+    },
+    onSubmit() {
+      const reader = new FileReader();
+      reader.onload = () => {
+        const imageBase64 = reader.result;
+        // send the image data to the server using your preferred method (e.g. Axios)
+      };
+      reader.readAsDataURL(this.file);
+    }
+  }
+}
 </script>
 
 <style scoped>
@@ -244,5 +265,8 @@ border-bottom-right-radius: 16px;
 }
 .body-text{
   text-align: center;
+}
+.body-text h6{
+  font-weight: 1000;
 }
 </style>

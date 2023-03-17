@@ -53,7 +53,7 @@ form {
   justify-content: center;
   align-items: center;
   color: white !important;
-  font-family: 'Inria Serif' !important;
+  font-family: 'Prompt', sans-serif !important;
   font-weight: 500 !important;;
 }
 .form-group{
@@ -62,6 +62,7 @@ form {
   margin-right: 100px;
 }
 h1{
+  font-family: 'Inria Serif' !important;
   font-size: 80px;
   text-align: center;
 }

@@ -66,13 +66,39 @@ defineProps({
 
 				<div class="price-details">
 					<h5>฿4700.00</h5>
-					<RouterLink to="/cart">
+				</div>
+				<RouterLink to="/cart">
 					<div class="btn-wrapper">
 						<button class="button-28" role="button"><span class="text">Add to cart</span></button>
-					</div></RouterLink>
+					</div>
+				</RouterLink>
+				<div class="settextbtn">
+                  	<button type="button" class="button-28"
+                    	data-mdb-ripple-color="dark" data-bs-toggle="modal" data-bs-target="#exampleModal">ชำระเงิน
+					</button>
 				</div>
 		</div>
 	</div>
+	<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1"        aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title settext" id="exampleModalLabel">การชำระเงิน</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="body-text settext">
+          <h6>กรุณาเข้าสู่ระบบ</h6>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary settext" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary settext" @click.prevent="onSubmit">Log in</button>
+      </div>
+    </div>
+  </div>
+</div>
 </template>
 
 <script>
@@ -198,6 +224,9 @@ nav ul li.search button[type="submit"] i {
 	flex-direction: column;
 	align-items: flex-end;
 }
+.settextbtn{
+	margin-top: 5px;
+}
 .button-box button {
   padding: 7px;
   margin-top: 10px;
@@ -251,6 +280,15 @@ nav ul li.search button[type="submit"] i {
 .button-28:active {
   box-shadow: none;
   transform: translateY(0);
+}
+.modal{
+  font-family: 'Prompt', sans-serif;
+}
+.body-text{
+  text-align: center;
+}
+.body-text h6{
+  font-weight: 1000;
 }
 .button-box button:hover {
   background-color: #9c9c9c;

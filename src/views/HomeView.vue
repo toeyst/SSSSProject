@@ -13,7 +13,9 @@ const { push } = useRouter();
   <main>
     <SearchBar @search="onSearch"></SearchBar>
     <PromoShoes v-if="show"></PromoShoes>
+    <hr>
     <ShoesShop v-if="show"></ShoesShop>
+    <hr>
     <div class="container">
       <div class="row">
 

@@ -59,6 +59,7 @@ export default {
 <style scoped>
 
 h1 {
+  font-family: 'Inria Serif' !important;
   font-size: 150px;
   text-align: center;
 }
@@ -70,7 +71,7 @@ form {
   justify-content: center;
   align-items: center;
   color: white !important;
-  font-family: 'Inria Serif' !important;
+  font-family: 'Prompt', sans-serif !important;
   font-weight: 600 !important;;
 }
 
