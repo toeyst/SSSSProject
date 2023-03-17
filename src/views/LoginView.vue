@@ -44,11 +44,15 @@ export default {
   },
   methods: {
     login() {
+      localStorage.setItem('isLoggedIn', true);
+      localStorage.setItem('userEmail', 'user@example.com');
       // Send a request to the server with the email and password
       if(this.password == "123456"){
         this.$router.push({ path: '/Admin' })
       } else{
+        
         this.$router.push({ path: '/' })
+        
 
       }
       // Handle the response (e.g. show an error message if login fails)

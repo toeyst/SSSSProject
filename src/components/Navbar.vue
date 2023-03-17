@@ -2,11 +2,12 @@
 import { RouterLink, RouterView } from 'vue-router'
 
 
+
 </script>
 
 <template>
   <div class="row navbar m-0 p-0">
-    <div class="col-7  p-0 my-2 setmargin-img">
+    <div class="col-6  p-0 my-2 setmargin-img">
       <img src="../assets/Logo-removebg-preview.png" alt="" width="75">
     </div>
   
@@ -19,17 +20,21 @@ import { RouterLink, RouterView } from 'vue-router'
  
     </div> 
     <div class="col-1 setmargin-img " style="text-align:center;">
-      <RouterLink   class="settext" to="/login"> Login</RouterLink>
+      <RouterLink v-show="!isLoggedIn"  class="settext" to="/login"> Login</RouterLink>
+      <RouterLink to="/" @click="logout" class="settext" v-show="isLoggedIn">
+          Log out
+      </RouterLink>
  
     </div>
     <div class="col-1 setmargin-img " style="text-align:center;">
       <RouterLink   class="settext" to="/detail"> Details </RouterLink>
  
     </div>
-    <div class="col-1 setmargin-img " style="text-align:center;">
+    <!-- <div class="col-1 setmargin-img " style="text-align:center;">
       <RouterLink   class="settext" to="/Admin"> Admin </RouterLink>
  
-    </div>
+    </div> -->
+    
 
 
   </div>
@@ -42,6 +47,30 @@ export default {
     RouterLink,
     RouterView
   },
+  data() {
+    return {
+      isLoggedIn: false,
+      userEmail: '',
+    };
+  },
+  mounted() {
+    const isLoggedIn = localStorage.getItem('isLoggedIn');
+    if (isLoggedIn) {
+      this.userEmail = localStorage.getItem('userEmail');
+      this.isLoggedIn = true;
+    }
+},
+  methods:{
+    logout() {
+     
+      console.log("kuy",this.isLoggedIn)
+      localStorage.removeItem('isLoggedIn');
+      localStorage.removeItem('userEmail');
+      // Redirect to the login page
+      location.reload()
+    },
+
+  }
   //other code here
 }
 </script>

@@ -17,6 +17,7 @@
     "i": "^0.3.7",
     "npm": "^9.6.1",
     "reset-css": "^5.0.1",
+    "sweetalert2": "^11.7.3",
     "vue": "^3.2.45",
     "vue-filepond": "^7.0.3",
     "vue-good-table": "^2.21.11",
@@ -32,6 +33,7 @@
     "eslint": "^8.22.0",
     "eslint-plugin-vue": "^9.3.0",
     "prettier": "^2.7.1",
+    "sass": "^1.59.3",
     "vite": "^4.0.0"
   }
 }
