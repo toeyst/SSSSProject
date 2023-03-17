@@ -44,9 +44,11 @@ export default {
       items: [],
       show: true,
       noResult: false,
-      search:false
+      search:false,
+     
     };
   },
+
   methods: {
     onSearch(value) {
       console.log("viewtest", value);
