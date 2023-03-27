@@ -12,8 +12,12 @@ const { push } = useRouter();
         <div class="login-form-area">
           <div class="login-form-group">
             <div class="form-margin">
-              <label>Email</label><input v-model="email" type="email" placeholder="Email" class="form-control" id="email" required>
-              <label>Password</label><input v-model="password" type="password" placeholder="Password" class="form-control" id="password" required>
+              <label>Email</label>
+              <input v-model="email" type="email" placeholder="Email" class="form-control" id="email" required>
+              
+              <label>Password</label>
+              <input v-model="password" type="password" placeholder="Password" class="form-control" id="password" required>
+
               <div class="button-login">
                 <button type="submit" class="btn btn-primary">Login</button>
               </div>

@@ -21,10 +21,12 @@ defineProps({
           <h4>Nike Air Force 1'07 LV8</h4>
           <h5>Men Shoe</h5>
           <h6>฿4700</h6>
-          <button class="button-28" role="button" type="submit">
-            <img src="src\assets\cart.png" alt="buttonpng" border="0" width="20" height="20" />
-            <span class="text">Add to cart</span>
-          </button>
+          <router-link to="/cart">
+            <button class="button-28" role="button" type="submit">
+              <img src="src\assets\cart.png" alt="buttonpng" border="0" width="20" height="20" />
+              <span class="text">Add to cart</span>
+            </button>
+          </router-link>
         </div>
       </div>      
       
@@ -36,10 +38,12 @@ defineProps({
           <h4>Nike Air Max 97 SE</h4>
           <h5>Men Shoe</h5>
           <h6>฿6900</h6>
-          <button class="button-28" role="button" type="submit">
-            <img src="src\assets\cart.png" alt="buttonpng" border="0" width="20" height="20" />
-            <span class="text">Add to cart</span>
-          </button>
+          <router-link to="/cart">
+            <button class="button-28" role="button" type="submit">
+              <img src="src\assets\cart.png" alt="buttonpng" border="0" width="20" height="20" />
+              <span class="text">Add to cart</span>
+            </button>
+          </router-link>
         </div>
       </div>      
       
@@ -51,10 +55,12 @@ defineProps({
           <h4>Nike Blazer Mid Premium</h4>
           <h5>Women Shoe</h5>
           <h6>฿4700</h6>
-          <button class="button-28" role="button" type="submit">
-            <img src="src\assets\cart.png" alt="buttonpng" border="0" width="20" height="20" />
-            <span class="text">Add to cart</span>
-          </button>
+          <router-link to="/cart">
+            <button class="button-28" role="button" type="submit">
+              <img src="src\assets\cart.png" alt="buttonpng" border="0" width="20" height="20" />
+              <span class="text">Add to cart</span>
+            </button>
+          </router-link>
         </div>
       </div>
 
@@ -66,10 +72,12 @@ defineProps({
           <h4>Nike Blazer Mid Premium</h4>
           <h5>Women Shoe</h5>
           <h6>฿4700</h6>
-          <button class="button-28" role="button" type="submit">
-            <img src="src\assets\cart.png" alt="buttonpng" border="0" width="20" height="20" />
-            <span class="text">Add to cart</span>
-          </button>
+          <router-link to="/cart">
+            <button class="button-28" role="button" type="submit">
+              <img src="src\assets\cart.png" alt="buttonpng" border="0" width="20" height="20" />
+              <span class="text">Add to cart</span>
+            </button>
+          </router-link>
         </div>
       </div>
     </div>
@@ -90,7 +98,7 @@ defineProps({
   grid-gap : 70px;
   text-align: center;
   color: #fff !important;
-  font-family: 'Inria Serif' !important;
+  font-family: 'Prompt';
   font-weight: 500 !important;;
 }
 .section_grid_item4{

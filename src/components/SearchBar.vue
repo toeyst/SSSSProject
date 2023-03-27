@@ -3,18 +3,17 @@
 </script>
 <template>
   <form @submit.prevent="handleSearch">
-    <input type="text" v-model="input" placeholder="Search Nike.com" />
+    <input type="text" v-model="input" placeholder="Search" />
     <button type="submit">Search</button>
   </form>
 
 
-
   <div>
-
     <button @click="startRecognition" class="btn btn-outline-danger">Start Recognition 
       <img id="imgid" src="../assets/voice-search.png"  alt="" width="30" height="30">
     </button>
   </div>
+
 </template>
 
 <script>

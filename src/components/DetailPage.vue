@@ -67,8 +67,8 @@ defineProps({
 				<div class="price-details">
 					<h5>฿4700.00</h5>
 					<div class="price-btn">
-						<button v-bind:class="buttonStyle" @click="onClick">Add to cart</button>
-						<button v-bind:class="buttonStyle" @click="$emit('checkLogin')">Buy now</button>
+						<button class="button-28" @click="$emit('checkLogin')">Add to cart</button>
+						<button class="button-28" @click="$emit('checkLogin')">Buy now</button>
 					</div>
 				</div>
 		</div>

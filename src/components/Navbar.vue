@@ -26,6 +26,10 @@ import { RouterLink, RouterView } from 'vue-router'
       </RouterLink>
  
     </div>
+    <div v-show="isLoggedIn" class="col-1 setmargin-img " style="text-align:center;">
+      <RouterLink   class="settext" to="/history"> History </RouterLink>
+ 
+    </div>
     <div class="col-1 setmargin-img " style="text-align:center;">
       <RouterLink   class="settext" to="/detail"> Details </RouterLink>
  
@@ -41,7 +45,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
 
 </template>
-<script >
+<script>
 export default {
   components: {
     RouterLink,
@@ -92,7 +96,7 @@ nav li.router-link-exact-active {
 .settext{
   text-decoration: none !important;
   color: #fff !important;
-  font-family: 'Inria Serif' !important;
+  font-family: 'Prompt' !important;
   font-weight: 500 !important;
 }
 .setmargin-img{

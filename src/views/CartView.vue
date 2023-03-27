@@ -9,8 +9,8 @@
               <div class="col-lg-8">
                 <div class="p-5">
                   <div class="d-flex justify-content-between align-items-center mb-5">
-                    <h1 class="settext fw-bold mb-0 text-black">ตะกร้า</h1>
-                    <h6 class="settext mb-0 text-muted">3 รายการ</h6>
+                    <h1 class="settext fw-bold mb-0 text-black">Cart</h1>
+                    <h6 class="settext mb-0 text-muted">3 items</h6>
                   </div>
                   <hr class="my-4">
 
@@ -22,9 +22,9 @@
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-3">
                       <h6 class="text-black mb-0">Nike Air Force 1'07 LV8</h6>
-                      <h6 class="settext text-muted">รองเท้าผ้าใบ</h6>
-                      <h6 class="settext text-muted">เขียว/ขาว/เหลือง</h6>
-                      <h6 class="settext text-muted">ขนาด 48</h6>
+                      <h6 class="settext text-muted">Sneakers</h6>
+                      <h6 class="settext text-muted">Green/White/Yellow</h6>
+                      <h6 class="settext text-muted">Size 48</h6>
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
                       <button class="btn btn-link px-2"
@@ -58,9 +58,9 @@
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-3">
                       <h6 class="text-black mb-0">Nike Air Jordan 1 Mid</h6>
-                      <h6 class="settext text-muted">รองเท้าผ้าใบ</h6>
-                      <h6 class="settext text-muted">เทา/น้ำเงิน/ขาว</h6>
-                      <h6 class="settext text-muted">ขนาด 45</h6>
+                      <h6 class="settext text-muted">Sneakers</h6>
+                      <h6 class="settext text-muted">Grey/Blue/White</h6>
+                      <h6 class="settext text-muted">Size 45</h6>
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
                       <button class="btn btn-link px-2"
@@ -94,9 +94,9 @@
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-3">
                       <h6 class="text-black mb-0">Nike Pegasus 39</h6>
-                      <h6 class="settext text-muted">รองเท้าวิ่ง</h6>
-                      <h6 class="settext text-muted">แดง/ดำ/ขาว</h6>
-                      <h6 class="settext text-muted">ขนาด 44</h6>
+                      <h6 class="settext text-muted">Running shoes</h6>
+                      <h6 class="settext text-muted">Red/Black/White</h6>
+                      <h6 class="settext text-muted">Size 44</h6>
                     </div>
                     <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
                       <button class="btn btn-link px-2"
@@ -133,37 +133,37 @@
               </div>
               <div class="col-lg-4 bg-grey">
                 <div class="p-5">
-                  <h3 class="settext fw-bold mb-5 mt-2 pt-1">สรุปรายการ</h3>
+                  <h3 class="settext fw-bold mb-5 mt-2 pt-1">Summary</h3>
                   <hr class="my-4">
 
                   <div class="d-flex justify-content-between mb-4">
-                    <h5 class="settext text-uppercase">ยอดรวมย่อย</h5>
+                    <h5 class="settext text-uppercase">Subtotal</h5>
                     <h5>฿14,300.00</h5>
                   </div>
 
-                  <h5 class="settext text-uppercase mb-3">ค่าธรรมเนียมการจัดส่งและดำเนินการ</h5>
+                  <h5 class="settext text-uppercase mb-3">Shipping fees</h5>
 
                   <div class="settext mb-4 pb-2">
-                    <h6>ฟรี</h6>
+                    <h6>Free</h6>
                   </div>
 
-                  <h5 class="settext text-uppercase mb-3">รหัสส่วนลด</h5>
+                  <h5 class="settext text-uppercase mb-3">GIVE CODE</h5>
 
                   <div class="mb-5">
                     <div class="settext form-outline">
-                      <input type="text" id="form3Examplea2" class="form-control form-control-lg" placeholder="กรอกรหัสส่วนลด" />
+                      <input type="text" id="form3Examplea2" class="form-control form-control-lg" placeholder="Enter your code here." />
                     </div>
                   </div>
 
                   <hr class="my-4">
 
                   <div class="d-flex justify-content-between mb-5">
-                    <h5 class="settext text-uppercase">ยอดรวม</h5>
+                    <h5 class="settext text-uppercase">Total Price</h5>
                     <h5>฿14,300.00</h5>
                   </div>
                   <div class="settextbtn">
                   <button type="button" class="setbtn btn btn-dark  btn-lg"
-                    data-mdb-ripple-color="dark" data-bs-toggle="modal" data-bs-target="#exampleModal">ชำระเงิน</button>
+                    data-mdb-ripple-color="dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Purchase</button>
                   </div>
                 </div>
               </div>
@@ -179,20 +179,20 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title settext" id="exampleModalLabel">การชำระเงิน</h5>
+        <h5 class="modal-title settext" id="exampleModalLabel">Payment</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <div class="body-text settext">
-          <h6>โปรดแนบสลีปการชำระเงิน</h6>
+          <h6>Please attach payment pictures.</h6>
           <form>
             <input type="file" @change="onFileChange">
           </form>
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary settext" data-bs-dismiss="modal">ปิด</button>
-        <button type="submit" class="btn btn-primary settext" @click.prevent="onSubmit">ยืนยัน</button>
+        <button type="button" class="btn btn-secondary settext" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary settext" @click.prevent="onSubmit">Confirm</button>
       </div>
     </div>
   </div>

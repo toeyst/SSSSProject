@@ -21,7 +21,11 @@ defineProps({
         </div>
         <div class="promo-img">
           <img src="src\assets\PromoShoesPic.png" class="rounded" alt="...">
-        <div class="button-pos"> <button class="promo-button">BUY NOW</button></div>
+        <div class="button-pos">
+          <router-link to="/cart">
+            <button class="promo-button" @click="$emit('checkLogin')">BUY NOW</button>
+          </router-link>
+        </div>
         </div>
         <div class="promo-text-right">
           <h3>Nike Air Force 1 '07 Premium</h3>
@@ -52,16 +56,18 @@ h2{
   display: grid;
   grid-template-columns: 1fr auto auto 1fr;
   color: black !important;
-  font-family: 'Inria Serif' !important;
+  font-family: 'Prompt';
   font-weight: 500 !important;
 }
 .promo-text-left{
+  font-family: 'Inria Serif' !important;
   text-align: left;
   margin-top: 165px;
   text-decoration-line: underline;
   text-decoration-thickness: 3px;
 }
 .hellotextleft1{
+  font-family: 'Inria Serif' !important;
   padding-right: 10px;
   padding-top: 100px;
   text-align: right;
