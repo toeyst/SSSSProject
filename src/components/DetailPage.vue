@@ -65,7 +65,7 @@ defineProps({
 				</div>
 
 				<div class="price-details">
-					<h5>฿4700</h5>
+					<h5>฿4700.00</h5>
 					<div class="price-btn">
 						<button v-bind:class="buttonStyle" @click="onClick">Add to cart</button>
 						<button v-bind:class="buttonStyle" @click="$emit('checkLogin')">Buy now</button>
@@ -198,6 +198,9 @@ nav ul li.search button[type="submit"] i {
 	flex-direction: column;
 	align-items: flex-end;
 }
+.settextbtn{
+	margin-top: 5px;
+}
 .button-box button {
   padding: 7px;
   margin-top: 10px;
@@ -251,6 +254,15 @@ nav ul li.search button[type="submit"] i {
 .button-28:active {
   box-shadow: none;
   transform: translateY(0);
+}
+.modal{
+  font-family: 'Prompt', sans-serif;
+}
+.body-text{
+  text-align: center;
+}
+.body-text h6{
+  font-weight: 1000;
 }
 .button-box button:hover {
   background-color: #9c9c9c;
