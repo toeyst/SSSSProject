@@ -59,7 +59,7 @@ export default {
         
 
       }
-      // Handle the response (e.g. show an error message if login fails)
+     
     },
   }
 };

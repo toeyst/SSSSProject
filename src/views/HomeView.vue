@@ -35,6 +35,8 @@ const { push } = useRouter();
         </div>
       </div>
     </div>
+      <!-- <button @click="  Findsum(this.num)"> SSS </button>
+      <button @click="  Findmax(this.num)"> max </button> -->
 
 
   </main>
@@ -47,11 +49,36 @@ export default {
       show: true,
       noResult: false,
       search:false,
-     
+      num:[2,4,6,8,10,14,12],
+      sum:0,
+      max:0
     };
   },
 
   methods: {
+    Findsum(num){
+      for(var i = 0;i < num.length;i++){
+        this.sum = (this.sum + num[i]) ;
+        console.log(num[i])
+        
+      }
+      this.sum = (this.sum / num.length)
+      console.log("ค่าเฉลี่ย",this.sum)
+    },
+    Findmax(num){
+      for(var i = 0;i < num.length;i++){
+        if(this.max < num[i]){
+          this.max =  num[i] ;
+          console.log("ss",num[i])
+      console.log("max",this.max)
+
+        }
+
+       
+        
+      }
+    }
+    ,
     onSearch(value) {
       console.log("viewtest", value);
       const input = value;
