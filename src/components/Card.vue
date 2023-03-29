@@ -1,15 +1,19 @@
 <template>
+
   <div class="card">
-    <img :src="image" alt="" width="288" height="300"/>
+
+      <img :src="image" alt="" width="288" height="300"/>
     <h1>{{ title }}</h1>
     <h3>{{ sex }} {{ type }}</h3>
-    <h3>color : {{ color }}</h3>
-
+    <h3>color : {{ color }} </h3>
+    
+   
   </div>
 </template>
 
 <script>
 export default {
+
   props: {
     title: {
       type: String,
@@ -33,6 +37,7 @@ export default {
     }
   }
 }
+
 </script>
 
 <style scoped>

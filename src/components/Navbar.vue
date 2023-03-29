@@ -27,6 +27,10 @@ import { RouterLink, RouterView } from 'vue-router'
  
     </div>
     <div v-show="isLoggedIn" class="col-1 setmargin-img " style="text-align:center;">
+      <RouterLink   class="settext" to="/cart"> Cart </RouterLink>
+ 
+    </div>
+    <div v-show="isLoggedIn" class="col-1 setmargin-img " style="text-align:center;">
       <RouterLink   class="settext" to="/history"> History </RouterLink>
  
     </div>

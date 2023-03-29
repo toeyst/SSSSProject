@@ -35,7 +35,7 @@ defineProps({
           <img src="src\assets\ShoeShop02.png" alt="" width="288" height="300"/>
         </div>
         <div class="section_item_text">
-          <h4>Nike Air Max 97 SE</h4>
+          <h4>Nike Air Max 97 SE Premium</h4>
           <h5>Men Shoe</h5>
           <h6>฿6900</h6>
           <router-link to="/cart">

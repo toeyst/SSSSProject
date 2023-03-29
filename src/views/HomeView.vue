@@ -14,8 +14,8 @@ const { push } = useRouter();
     <SearchBar @search="onSearch"></SearchBar>
     <PromoShoes v-if="show"></PromoShoes>
     <hr>
-    <ShoesShop v-if="show"></ShoesShop>
-    <hr>
+    <ShoesShop v-if="show" @click="goToDetailPage" ></ShoesShop>
+    
     <div class="container">
       <div class="row">
 
@@ -26,7 +26,7 @@ const { push } = useRouter();
         <div v-if="!noResult && search" class="txt">
           <h1 > SORRY </h1>
           <br>
-          <img src="../assets/no-result.png" alt="">
+          <img src="../assets/no-result.png" alt="" width="350">
           <br>
           <br>
           <h2> There is no search for what you are looking for. 
