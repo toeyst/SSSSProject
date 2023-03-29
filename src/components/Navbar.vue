@@ -30,10 +30,7 @@ import { RouterLink, RouterView } from 'vue-router'
       <RouterLink   class="settext" to="/history"> History </RouterLink>
  
     </div>
-    <div class="col-1 setmargin-img " style="text-align:center;">
-      <RouterLink   class="settext" to="/detail"> Details </RouterLink>
- 
-    </div>
+    
     <!-- <div class="col-1 setmargin-img " style="text-align:center;">
       <RouterLink   class="settext" to="/Admin"> Admin </RouterLink>
  
