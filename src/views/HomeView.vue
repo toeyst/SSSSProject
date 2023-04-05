@@ -14,9 +14,16 @@ const { push } = useRouter();
     <SearchBar @search="onSearch"></SearchBar>
     <PromoShoes v-if="show"></PromoShoes>
     <hr>
-    <ShoesShop v-if="show" @click="goToDetailPage" ></ShoesShop>
+    <div class="row">
+      <div class="col-md-3" v-for="item in allProduct" :key="item.id" >
+    <ShoesShop v-if="show" @click="goToDetailPage" :title="item.productName" :sex="item.productSex" :image="item.productPicture" :type="item.productType"
+            :color="item.productColor" ></ShoesShop>
+
+    </div>
+    </div>
     
-    <div class="container">
+    
+    <div class="container"> 
       <div class="row">
 
         <div class="col-md-3" v-for="item in items" :key="item.id" v-if="noResult">
@@ -46,6 +53,8 @@ export default {
   data() {
     return {
       items: [],
+      allProduct: [],
+
       show: true,
       noResult: false,
       search:false,
@@ -54,7 +63,11 @@ export default {
       max:0
     };
   },
-
+  
+  mounted() {
+    this.getAllproduct();
+  },
+ 
   methods: {
     Findsum(num){
       for(var i = 0;i < num.length;i++){
@@ -109,8 +122,18 @@ export default {
     },
     goToDetailPage() {
       this.$router.push(`/detail`);
+    },
+    getAllproduct() {
+      console.log('sending axios request...');
+      axios.post(`https://localhost:44387/SSSS/GetAllProduct`, null, { withCredentials: true })
+        .then(response => {
+          this.allProduct = response.data
+          console.log("all",this.allProduct)
+        })
+        .catch(error => {
+          console.error(error);
+        });
     }
-
   }
 }
 </script>
